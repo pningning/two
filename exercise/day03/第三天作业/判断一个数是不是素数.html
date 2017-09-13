@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 首先这个数是一个变量
+		function isPrime(n) {
+			if(n <=1) {
+				return;
+			}
+			var isp= true;
+			for(var i = 2; i<=n;i++) {
+				if(n%i == 0  && i != n) {
+					isp = false;
+					break;
+				} 
+			} 
+			if(isp == false) {
+			 console.log('不是质数')
+			} else{
+				console.log('质数')
+			}
+	    }
+     isPrime(15);
+	
+	</script>
+</body>
+</html>

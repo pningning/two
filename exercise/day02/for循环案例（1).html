@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 在控制台打印正方形
+		// var str = '';
+		// for(var i = 0;i<6;i++) {
+		// 	if(var j =0;j<8;j++) {
+		// 		str+="*";
+		// 	}
+		// 	str+='\n'
+		// }
+		// console.log(str);
+		var str = '';
+		for(var i =0;i<6;i++) {
+			for(var j = 0;j<8;j++) {
+				str+='*';
+			}
+			str+='\n';
+		}
+		console.log(str);
+		
+
+		var money =10000;
+		for(var i = 1;i <=5;i++) {
+			money=money+money*0.003;
+		}
+		console.log(parseFloat(money));
+		// 在控制台输入三角形
+		var str ='';
+		for(var i =0;i <= 8; i++) {
+			for(var j = i; j <= 8; j++){
+				str+='*';
+			}
+			str+='\n';
+		}
+		console.log(str);
+		// 在控制台输入99乘法表
+
+		var str = "";
+		for(var i = 1; i <= 9; i++) {
+			for(var j = i; j <= 9; j++) {
+				str+= i + '*' + j +'=' + i*j + '\t' ;
+			}
+			str+='\n';
+		}
+		console.log(str);
+	</script>
+</body>
+</html>

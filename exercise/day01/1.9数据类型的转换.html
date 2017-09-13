@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据类型转换</title>
+</head>
+<body>
+	输出变量的值在控制台中的颜色不一样，number类型为蓝色，string类型为黑色，boolean类型为甚蓝色，
+	undefined和null为灰色
+	<p>转化成字符串有两种方法</p>
+	<p>第一，str.toString(),这种方法不能让undefined转化成字符串，同时null也不能转化</p>
+	第二，String(str)
+	<script>
+		var age = 18;
+		var name = "za";
+		var isRight = true;
+		var a;
+		var b = null;
+		console.log(age.toString());//string
+		console.log(isRight.toString());
+		// console.log(a.toString());//错误的
+		// console.log(b.toString());
+		console.log(typeof String(a));
+		console.log(typeof String(b));
+	</script>
+</body>
+</html>

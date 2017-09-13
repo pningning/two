@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		   // - 模拟实现max() / min()
+		   // 1，先创造一个对象
+		   var MyMath = {
+		   // 2，给对象添加方法
+		   		max: function(){
+		   // 3，解决没有输入值的错误
+		   			if(arguments.length == 0) {
+		   			return -Infinity;
+		   		}
+		   // 4.通过维数组假设有一个最大值
+		  			 var maxs = arguments[0];
+		   // 5，遍历数组进行比较
+		   			for(var i = 1; i<arguments.length; i++)  {
+		   	// 6，判断结果并赋值
+		  			if(maxs < arguments[i]) {
+		   			maxs = arguments[i];
+		  		 }
+		   		}
+		   		return maxs;
+		  	 },
+		  	 min: function(){
+		  	 	if(arguments.length == 0) {
+		  	 		return Infinity;
+		  	 	}
+		  	 	var mins = arguments[0];
+		  	 	for(var i = 1; i< arguments.length; i++) {
+		  	 		if(mins>arguments[i]) {
+		  	 			mins = arguments[i];
+		  	 		}
+		  	 	}
+		  	 	return mins;
+		  	 }
+		   }
+		   console.log(MyMath.max(20,30));
+		   console.log(MyMath.min());
+		   // 7，输出返回值
+		   // 8，输出最大值
+
+	</script>
+</body>
+</html>

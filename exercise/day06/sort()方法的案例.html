@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// sort();方法在适当的位置对数组的元素进行排序，并返回数组
+		// sort 默认的是从小到大排列
+		var array = [20,40,12,60,34];
+		// var result = array.sort();
+		// console.log(result);
+		function compareNumbers(a,b) {
+			return b-a;
+		}
+		var result = array.sort(compareNumbers);
+		console.log(result);
+
+		
+	</script>
+</body>
+</html>

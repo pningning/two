@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	//  将一个字符串数组输出为|分割的形式 
+	// // 方法一
+		var array = ['刘备','张飞','关羽'];
+	// 	var str = array[0];
+	// 	for(var i = 1; i < array.length; i++) {
+	// 		str+='|'+array[i];
+	// 	}
+	// 	console.log(str);
+		// // 方法二：
+		// var arrStr = array.toString();
+		// console.log(arrStr);
+		// arrStr = array.join('|');
+		// console.log(arrStr);
+ 		// var result =  array.toString(); //.tostring() 返回一个字符串，表示的数组及其元素
+   		// console.log(result);
+    	// result =array.join('|'); //join 方法将数组（，或一个类数组对象）的所有元素链接到一个字符串中
+    	// console.log(result);
+
+	// 将一个字符串数组的元素的顺序进行反转。["a", 	"b", "c", "d"] -> [ "d","c","b","a"]	。使用两种种方式实现。提示：第i个和第length-	i-1个进行交换
+	  var array = ["a", "b", "c", "d"];
+	  // 法一：
+	  	// // reverse 表示的翻转数组
+	   // array.reverse();
+	   // console.log(array);
+
+
+	   // 法二：冒泡循环原理
+	   // for(var i = 0; i < array.length-i; i++) {
+	   // 	for(var j = 0; j< array.length-i-1;j++) {
+	   // 		// 判断
+	   // 		if(j<(j+1)) {
+	   // 			var temp = array[j];
+	   // 			array[j] = array[j+1];
+	   // 			array[j+1] = temp;
+	   // 		}
+	   // 	}
+	   // }
+    //   console.log(array);
+
+      // 法三：利用空数组
+
+      var newArr = [];
+      for(var i = array.length-1; i>=0;i--) {
+      	newArr[newArr.length]=array[i];
+      }
+      console.log(newArr);
+
+	
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// var result;
+		// do {
+		// 	result = confirm('我爱你，你爱我吗');
+		// } while(result != true);
+		// alert('我答应');
+
+
+		// var a =1;
+		// b=a++;
+		// c=b*2;
+		// // console.log(a);
+		// var i = 0;
+		// var sum = 0;
+		// do {
+		// 	i++;
+		// 	if(i%3 != 0) {
+		// 		console.log(i);
+				
+		// 	}
+		// }while(i<0)
+		 // var num = 2;
+		 // var result = num++ + num;
+		 // console.log(result);
+
+		  // 计算1-100之间所有数的和
+		  // var sum = 0;
+		  // var i = 0;
+		  // do { 
+		  // 	sum+=i;
+		  // 		i++;
+		  // } while(i<=100);
+		  // console.log(sum);
+		  //  输出5050
+		  // 先输出sum，再执行 i ++,再去判断
+		 
+		  // 当i = 100 的时候，sum已经输出，i++ = 101，不满足条件，就停止了循环
+
+		  // var sum = 0;
+		  // var i = 0;
+		  // do {
+		  //   i++; 
+		  // 	sum+=i;
+		  // } while(i<=100);
+		  // console.log(sum);
+		  // 输出5151
+		  // 先执行i++ ，在输出sum，再进行判断 
+		  
+		  // 当i =99的时候，i ++ =100时候已经输出一次，但是当 i<=100时,还是符合条件，所以还会再循环一次 
+		  // do 里面的循环体只管循环，从上到下
+			// var result;
+			// do {
+			// 	result = confirm('我爱你，你爱我吗');
+			// } while(result != true);
+			// alert('我答应');
+			// 求100以内所有3 的倍数的和
+			var i = 0;
+			var sum = 0;
+			do {
+				i++;
+				if(i%3 == 0) {
+				    sum += i;
+				}
+				
+			} while(i<100);
+			console.log(sum);
+	</script>
+</body>
+</html>

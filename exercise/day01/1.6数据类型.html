@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据类型介绍</title>
+</head>
+<body>
+	<p>数据类型介绍</p>
+	<p>
+		5种简单类型：string字符串，number数字，boolean 布尔，undefined未定义，null空或空对象指针
+	</p>
+	<p>1种复杂类型：Object(对象)</p>
+	<script>
+		// 1.String字符串：用单引号或者双引号引起来的字符系列
+		var sName = "zhangsan";
+		// 2.number数字类型 按照精度分类是否有小数点分为整数和小数
+		var iScore = 90;
+		var flWeight = 0.9;
+		// 按照进制分类有
+		// 十进制
+		// 十六进制 0-9和a-f(10-15)组成，必须0x开头
+		// 八进制 有0-7基数构成，必须0开头
+		var num1 = 030;
+		console.log(num1);
+		var num2 = 080;
+		console.log(num2);
+		// 3.Boolean 布尔
+		// 一般把真假是否这样的数据定义为布尔值，布尔值只用两个 true真，false假
+		var married = false;
+		console.log(married);
+		// 4.未定义Undefined
+		var namel;
+		alert(namel);
+		// 5.Null 空或空对象指针
+		// 你定义一个对象，如果这个对象想做初始化或者对象未初始化就是null
+		var obj = null;
+		console.log(obj);
+	</script>
+</body>
+</html>

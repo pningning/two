@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// // 冒泡排列 要求按照从小到大排列数组
+		// var arr = [1, 45, 23, 16, 12, 9, 4, 5];
+		// // 首先完成趟数控制
+		// for(var i = 0; i <=arr.length-1;i++) {
+		// 	// 再完成控制交换数字的次数的控制
+		// 	for(var j= 0; j <= arr.length-1-i; j++) {
+		// 		// 判断前面的数大于后面的值
+		// 		if(arr[j] > arr[j+1]) {
+		// 			// 把前后两个值进行转换
+		// 			var temp = arr[j]; //设置一个临时变量存储arr[j]
+		// 			arr[j] = arr[j+1];
+		// 			arr[j+1] = temp;
+		// 		}
+		// 	}
+		// }
+		// console.log(arr);
+
+		// 冒泡排列 要求按照从小到大排列数组
+		var arr = [1, 45, 23, 16, 12, 9, 4, 5];
+		// 首先控制趟数
+		for(var i = 0; i<=arr.length-1; i++) {
+			// 控制交换数字的次数，每走一次，就会少交换一次，因为走一趟就会确定一个值，后面的位置被占一个，所以-i 
+			for(var j = 0; j <= arr.length-1-i;j++) {
+				// 判断前后值的大小，如果前面的值大于后面的值，那么后面的值会跟前面的值进行交换
+				if(arr[j] > arr[j+1]) {
+					// 前后的值进行交换
+					// 首先把前面的值赋值给一个临时变量，存储起来
+					var temp = arr[j];
+					// 再把后面的值赋值给前面的值；
+					arr[j] = arr[j+1];
+					// 再把前面的值赋值给后面的值，
+					arr[j+1] = temp;
+				}
+			}
+		}
+		console.log(arr);
+
+		// 冒泡排列 要求按照从小到大排列数组
+		var arr = [1, 45, 23, 16, 12, 9, 4, 5];
+		// 首先控制走的趟数(趟数等于数组的长度-1)
+		for( var i = 0; i <= arr.length - 1; i++) {
+			// 再控制每趟数字交换的次数，总共交换的次数=数组的长度-1，每走一趟，就会确定一个数，所以交换的次数就会较少一个，减少的次数=i
+			for(var j = 0; j <= arr.length-1-i; j++) {
+				// 判断前后值得大小，是否前面的值大于后面的值
+				if(arr[j] > arr[j+1]) {
+					// 如果前面的值大于后面的值，那么前后值进行交换
+					// 先设置一个临时变量存储前面的值
+					var temp = arr[j];
+					// 再把后面的值赋值给前面的值；
+					arr[j] = arr[j+1];
+					// 在把前面的值赋值给，后面的值，因为把前面的值赋值给临时变量了所以
+					arr[j+1] = temp;
+				}
+			}
+		}
+		console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
+
+		// 冒泡排列 要求按照从大到小排列数组
+		// var arr = [1, 45, 23, 16, 12, 9, 4, 5];
+		// for(var i = arr.length-1; i>=0;i--) {
+		// 	for(var j = arr.length-1-i;j>=0; j-- ) {
+		// 		if(arr[j]>arr[j-1]) {
+		// 			var temp = arr[j];
+		// 			arr[j-1] = arr[j];
+		// 		}
+		// 	}
+		// }
+		// console.log(arr);
+
+	</script>
+</body>
+</html>

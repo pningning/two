@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		 // 创建一个方法,
+		 // 创建一个方法,获取每个元素在数组中出现的次数
+    // var arr = ['c', 'a', 'z', 'a', 'x', 'a'];
+    // var oCount ={};
+    // 获取每个元素在数组中出现的次数
+		 // var arr = ['c','a','z','a','x','a'];
+		 // var obj = {};
+		 // for(var i = 0; i < arr.length; i++) {
+		 // 	var abc = arr[i];
+		 // 	if(obj[abc]){
+		 // 		obj[abc]++; 
+		 // 	} else {
+		 // 		obj[abc] = 1;
+		 // 	}
+		 // }
+		 // console.log(obj);
+
+		 // 编写一个方法去掉一个数组的重复元素['c', 'a', 'z', 'a', 'x', 'a']
+
+		 	var arr = ['c','a','z','a','x','a'];
+		 	var o = {};
+		 	for(var i=0;i<arr.length;i++){
+		 		var item = arr[i]
+		 	}
+		 	var arr=['c','a','z','a','x','a'];
+		 	var obj = {};
+		 	for(var i = 0; i<arr.length;i++) {
+		 		var abc = arr[i];
+		 		if(obj[abc]){
+		 			obj[abc]++;
+		 		} else {
+		 			obj[abc]=1;
+		 		}
+		 	}
+		 	// 创建一个新的数组。存储对象的键
+		 	var newarr= [];
+		 	for(var key in obj) {
+		 		newarr.push(key);
+		 	}
+		 	console.log(newarr);
+		 // var array = [];
+		 // for(key in )
+
+
+	</script>
+</body>
+</html>

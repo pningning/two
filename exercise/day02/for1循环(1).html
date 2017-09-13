@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 求1-100之间所有数的和
+		var sum = 0;
+		for(var i = 0; i<=100; i++) {
+			sum += i;
+		}
+		console.log(sum);
+		 // 求1-100之间所有数的和平均值
+		 var sum = 0;
+		 var cont = 0;
+		 for(var i= 0; i <= 100; i++) {
+		 	cont = i ;
+		 	sum +=i;		 
+		 }
+		 console.log(sum/cont);
+		 // 求1-100之间所有偶数的和
+		 var sum = 0;
+		 for(var i = 0; i <= 100;i++) {
+		 	if(i%2 == 0) {
+		 		sum+=i;
+		 	}
+		 }
+		 console.log(sum);
+		 // 同时求1-100之间所有偶数和奇数的和
+		 var sum = 0;
+		 var num = 0;
+		 for(var i =0; i <= 100; i++) {
+		 	if(i%2) {
+		 		sum+=i;
+		 	} else {
+		 		num+=i;
+		 	}
+		 }
+		 console.log(sum,num);
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// //创建一个函数 改变时间格式 为xxxx-yy-zz  hh-m-s
+		// 1，声明一个函数 从国际时间里面获取到想要的格式
+			function formatDate(date) {
+			// 2.判断输入的是不是一个日期，如果传入的参数，不是日期对象，那么立即终止 
+				if(!(date instanceof Date)) {
+					return;
+				}
+				// 3.处理日期
+				var year = date.getFullYear(); //从时间对象里获取年
+				var month = date.getMonth(); //从时间对象里获取月
+				var day = date.getDay();
+				var hour= date.getHours();
+				var mintue = date.getMinutes();
+				var second = date.getSeconds();
+		// 判断除了年以外的其他数据是否是两位数
+				month = month > 9 ? month :'0' + month;
+				day = day> 9 ? day:'0' + day;
+				hour = hour > 9 ? hour:'0' + hour;
+				mintue = mintue > 9 ? mintue : '0' +mintue;
+				second = second > 9 ? second : '0' +second;
+				return year + '-'+ month + '-' +day+'\t'+hour+':'+mintue+':'+second;
+			}
+			var d = new Date();//获取当前时间
+			var result = formatDate(d);
+			console.log(result);
+
+
+			// 计算时间差，返回相差的天/时/分/秒
+			function getIntervar(start,end) {
+				var interval = end - start; //算出相差毫秒数
+				interval = interval/1000;
+				// 把获取的秒数换成 天 小时 分钟 秒
+				var month = Math.floor(interval/60/60/24/30);
+				var day = Math.floor(interval/60/60/24);
+				var hour = Math.floor(interval/60/60%24);
+				var mintue= Math.floor(interval/60%60);
+				var second = Math.round(interval%60);
+				return {
+					day:day,
+					hour:hour,
+					mintue:mintue,
+					second:second
+				}
+			}
+			var d1 = new Date(2017,8,12);
+			var d2 = new Date();
+
+			var time = getIntervar(d1,d2);
+			console.log(time);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	// 案例: 分数转换，把百分制转换成ABCDE   <60  E  60-70 D  70-80 C  80-90 B  90 - 100 A
+	// 第一步，定义一个变量
+		var score = 120;
+		
+		if(score >= 0 && score < 100) {
+			score = parseInt(score/10);
+			switch(score) {
+			case 10:
+			case 9:
+			console.log('A');
+			break;
+			case 8:
+			console.log('B');
+			break;
+			case 7:
+			console.log('C');
+			break;
+			case 6:
+			console.log('D');
+			break;
+			default:
+				console.log('E');
+			break;
+		}
+		} else {
+			console.log('请输入100以内的值');
+		}
+		
+	</script>
+</body>
+</html>

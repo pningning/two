@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 首先最大值或最小值为变量
+		
+		function maxNumber(nums) {
+			var max = nums[0];
+			for(var i =0; i<nums.length; i++) {
+				if(nums[i]>max) {
+					max = nums[i]
+				}
+			}
+			return max;
+		}
+		console.log(maxNumber(nums));
+
+		function minNumber(nums) {
+			var min = nums[0];
+			for(var i = 0; i < nums.length; i++) {
+				if(nums[i]<min) {
+					min = nums[i];
+				}
+			}
+			return min;
+		}
+		var nums = [30,2,5,1];
+		console.log(minNumber(nums));
+	</script>
+</body>
+</html>

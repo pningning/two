@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>单行注释//</p>
+	<p>多行注释/**/主要用在对象和函数这些地方</p>
+	<p>js中的最大值：Number.MAX_VALUE常量</p>
+	<p>js中的最小值Number.MIN_VALUE常量</p>
+	<p>转化成数值方法一、Number(str)
+	如果字符串中由非数字的字符，不能转化成数字。可以把布尔值转变成数字，true1 ，false0</p>
+	<p>方法二：parseInt(str)不能转化小数，parseFloat可以转化小数，也可以转化整数 她俩碰到的第一个数字开始转化，碰到非数字就停止，然后返回值，不能转boolean值</p>
+	<p>字符串不能转化成数字那么就会返回NaN</p>
+	<p>从颜色上看NaN是数字，其实NaN是一个数字,其实NaN确实是一个数字，但是是一个特殊的数字 NaN: not a number (不是一个数字)</p>
+	<p>isNaN()判断变量是不是一个数字，如果是一个数字返回false，如果不是一个数字，返回true</p>
+	<p></p>
+	<script>
+		var strA = '123abc';
+		var flag = true;
+		var flagF = false;
+		var strB = 'abc123';
+		var stC = '123.5';
+		console.log(Number(strA));//nan
+		console.log(Number(flag));//1
+		console.log(Number(flagF));//0
+		console.log(Number(strB));//nan
+		console.log(Number(stC));//123.5
+		console.log(parseInt(strA));//123
+		console.log(parseFloat(strA));//123
+		console.log(parseInt(stC));//1123
+		console.log(parseFloat(stC));//123.5
+		console.log(parseInt(flag));//NaN
+		console.log(parseFloat(flag));//NaN
+		var num1 = 20;
+		var mum2 = "20";
+		var str3 = 'abc'
+		console.log("20"-20);
+
+		// 如果是减号，那么会自动发生转换，把非数字尝试转换成数字，然后进行算数运算
+		console.log(num1-mum2);
+		// NaN只是一个特殊的数字，他和任何数字不相等，包括自己
+
+		console.log(num1-str3);//总的值为NaN
+		console.log(num1+Number(mum2));
+		// 如果加号两边任何一边不是数字就是拼接
+		console.log(num1+mum2);
+		console.log(isNaN(str3));
+		console.log(isNaN(mum2));
+	</script>
+</body>
+</html>

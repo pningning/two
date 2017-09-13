@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 首先这个数是一个变量
+		function getProduct(n) {
+			var num = 1;
+			for(var i = 1; i<=n; i++){
+				num*=i;
+			}
+			return num;
+		}
+		console.log(getProduct(4));
+
+		// 求1!+2!+3!+....+n!
+
+		function GetProduct(n) {
+			var sum = 0;
+			for(var i =1; i<=n; i++) {
+				sum+=getProduct(i);
+			}
+			return sum;
+		}
+		console.log(GetProduct(3))
+	</script>
+</body>
+</html>

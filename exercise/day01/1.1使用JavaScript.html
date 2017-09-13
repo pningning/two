@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 在html中有如何使用javascript 三种方法 
+	1、行内
+	2、内嵌
+	3、外链-->
+	<script>
+		alert("你好");
+	</script>
+	<!-- 1、行内样式 -->
+	<p onclick="alert('你好！')">点我看看</p>
+	<!-- 2、内嵌样式 在小项目的时候使用内嵌式样式-->
+	<script>
+		alert("我很好");
+	</script>
+	<script src="./holle.js"></script>
+	<!-- 如果script标签已经引入了外链式样式，就不能在script中使用javascript标签了，因为会被忽略不显示  script标签应该书写在body闭合标签的上面 -->
+</body>
+</html>

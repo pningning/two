@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	// 随机获取两个数直接的一个浮点数。包括最小值
+		function getRandomInclusive(min,max) {
+			return Math.random()*(max-min)+min;
+		}
+		console.log(getRandomInclusive(1,2));
+    // 随机获取两个数直接的一个整数。包括最小值
+		function getRandomInclusive(min,max) {
+			return Math.floor(Math.random()*(max-min)+min);
+		}
+		console.log(getRandomInclusive(10,20));
+	</script>
+</body>
+</html>

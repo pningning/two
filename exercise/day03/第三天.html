@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	// 声明一个数组
+		var names = ['zs','li','wang','liu'];
+		var indexSecond = names[2];//打印数组中第几个元素，第几个元素是按索引表示
+		// console.log(names);
+		console.log(indexSecond);
+		console.log(names.length);  //知道数组的长度
+		for(var i = 0; i<names.length; i++) {
+		console.log(names[i]);
+		} //循环打印数组中的元素
+		 // var numbers = []
+		 // 1.假设一个最大值、或最小值
+		 // 2，(找到所有的值跟最小值去比)
+		 // 3，如果这个值比最小值都小，那么把这个值赋值给最小值或最大值
+		 // 思路
+		 // 1，定义一个最大值和一个最小值
+		 // 2，遍历数组
+		 // 3，判断如果当前值比最大值大()
+		 // 4，就把当前值，赋值给最大值
+		 var numbers = [65, 13, 101, 88, 10, 25];
+		 var maxNumber = numbers[0];
+		 var minNumber = numbers[0];
+		 var maxIndex = 0;
+		 var minIndex = 0;
+		 for(var i = 0; i < numbers.length; i++) {
+		 	if(numbers[i]>maxNumber) {
+		 		maxNumber = numbers[i];
+		 		maxIndex = i;
+		 	}
+		 	if(numbers[i]<minNumber) {
+		 		minNumber = numbers[i];
+		 		minIndex = i;
+		 	}
+		 }
+		 console.log(maxNumber + '--' +maxIndex);
+		 console.log(minNumber + '==' +minIndex);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		// 声明一个数组格式
+		// var names = ['zs','li','wang','he','wen'];
+		// // 打印数组中的元素
+		// console.log(names);
+		// 整体打印数组的时候会出现索引，索引是从0开始排列
+
+			var numbers = [5,6,89,11,0,12,3,0];
+			var newNumbers = []; //newNumber.length=0
+			for(var i =0; i<numbers.length;i++) {
+				if(numbers[i] != 0) {
+					newNumbers[newNumbers.length] = numbers[i];
+				}
+			}
+			console.log(newNumbers);
+			var numbers = [5,6,89,11,0,12,3,0];
+			var newNumbers = [];
+			for(var i =0; i<numbers.length; i++) {
+				if(numbers[i] != 0) {
+				newNumbers[newNumbers.length] = numbers[i]
+				}
+			}
+			// console.log(newNumbers);
+			// 翻转数组
+			// var arr = [1,2,3,4,];
+			// var newArr = [];
+			// for(var i = arr.length-1; i>=0;i--) {
+			// 	newArr[newArr.length] = arr[i];
+			// }
+			// console.log(newArr);
+			// 数组翻转
+			// var arr = [1,2,3,4];
+			// var newArr = [];
+			// for(var i =arr.length-1; i>=0; i--) {
+			// 	newArr[newArr.length]=arr[i]
+			// }
+			// console.log(newArr);
+
+			// 求一组数中的所有数的和 和 平均值
+			//  var numbers = [35, 12, 35, 90, 11, 12];
+			//  var sum =0;
+			//  for(var i = 0; i<numbers.length;i++) {
+			//  	sum+=numbers[i]
+			//  }
+			//  console.log(sum)
+			// 冒泡练习
+			 var arr = [1, 45, 23, 16, 12, 9, 4, 5];
+			 for(var i =0; i<arr.length-1;i++) {
+			 	for(var j =0;j<arr.length-1-i;j++) {
+			 		if(arr[j]>arr[j+1]) {
+			 			var temp = arr[j];
+			 			arr[j] = arr[j+1];
+			 			arr[j+1]=temp;
+			 		}
+			 	}
+			 }
+			 console.log(arr);
+	</script>
+</body>
+</html>

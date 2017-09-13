@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 模拟无限大
+		// 1.声明一个对象
+		var MyMath = {
+			// 2，给对象添加方法
+			max:function(){
+				// 3，异常处理，如果么有值传入
+				if(arguments.length == 0) {
+					return -Infinity;
+				}
+				// 假设有个最大值
+				var max1 = arguments[0];
+				// 遍历数组，进行比较
+				for(var i = 1; i < arguments.length; i ++) {
+					// 比较进行判断
+					if(max1<arguments[i]) {
+						max1 = arguments;
+						
+					}
+					return max1;
+				}
+			},
+			min:function(){
+
+				if(arguments.length == 0) {
+					return Infinity;
+				}
+				// 利用维数组假设有一个最小值
+				var mins = arguments[0];
+				// 遍历数组，
+				for(var i = 1; i < arguments.length; i ++) {
+					// 进行判断比较
+					if(mins < arguments[i]) {
+						mins = arguments[i];
+					}
+				}
+				return mins;
+			}
+		}
+		console.log(MyMath.max(100,10,30,2));//100
+		console.log(MyMath.min());//Infinity
+
+		// 任意输出10——20的数字(包括20)
+
+			// 变量为数字，输出也是数字
+			// 通过函数的方式
+			function getRandom(min,max) {
+				return Math.floor(Math.random()*(max-min+1)+min);
+			}
+			console.log(getRandom(10,20));
+			// 随机生成颜色
+			// 颜色是rgb,需要变得是rbg 的值  还是任意的，所有要用随机输出数字的方式进行，取值范围是0-255；
+			// 1.声明随机输出任意数字的函数
+			function getRandom(min,max) {
+				return Math.floor(Math.random()*(max-min)+min); 
+			}
+            function getRgb(){
+            	var r = getRandom(0,225);
+            	var g = getRandom(0,225);
+            	var b = getRandom(0,255);
+            	 var oBody = document.getElementsByTagName('body')[0];
+            	 console.log(oBody);
+             oBody.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+            }
+            getRgb();//调用函数
+
+	</script>
+</body>
+</html>
