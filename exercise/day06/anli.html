@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		 // var Number = [99,90,89,100,20,200];
+		 // var max =Number[0];
+		 // for(var i=1;i<Number.length;i++){
+		 // 	if(Number[i]>Number[0]){
+		 // 		max = Number[i];
+		 // 		console.log(max);
+		 // 	}
+		 // }
+		// var Number =[100,200,20,30,50,80,89];
+		// var max=Number[0];
+		// var min =Number[0];
+		// for(var i=1;i<Number.length;i++){
+		// 	if(Number[i]>max){
+  //             max =Number[i];
+		// 	}if(Number[i]<min){
+		// 		min =Number[i];
+		// 	}
+		// }console.log(max,min);
+		//  var Number = [1,2,3];
+		// var names =["zs","ls","wu"];
+		// console.log(Number[2], names[2]);
+	 // var Number =[10,29,0,40,90,0,78,0,99,80,0,87,85];
+	 // var newNumber =[];
+	 // for(var i=0;i<Number.length;i++){
+	 // 	if(Number[i] !=0){
+	 // 		newNumber[i] =Number[i];
+	 // 		newNumber[newNumber.length] =Number[i];//新定义的数组长度等于符合要求的原来数组中元素的个数
+	 // 	}
+	 // }console.log(newNumber);
+	 // var Number =[1,2,3,4];
+	 // var newNumber =[];
+	 // for(var i=Number.length-1;i>=0;i--){
+	 // 	newNumber[newNumber.length] = Number[i];
+	 // }console.log(newNumber);
+	 //冒泡排序
+//  var Number =[10,20,52,44,3,2,7,89,77];
+//  var temp;
+// for(var i=0;i<Number.length-1;i++){
+// 	for(var j=0;j<Number.length-1-i;j++){
+// 		if(Number[j]>Number[j+1]){
+//          temp=Number[j];
+//          Number[j] = Number[j+1];
+//          Number[j+1] = temp;
+// 		}
+// 	}
+// }console.log(Number);
+/*定义函数的两种方式
+1. 直接定义
+ function 函数名（）{
+ }
+  function sayHello(){
+	console.log("Hello");
+  }
+  函数名的调用： 函数名+();
+ 2.使用变量定义 
+ var sayHello =function(里面没有任何东西的函数是匿名函数){
+	conwole.log("Hello");
+ }*/
+//冒泡排序*2
+// var Number =[20,9,80,8,78,45,6,33,71];
+// var temp;
+// for(var i=0;i<Number.length-1;i++){
+// 	for(var j=0;j<Number.length-1-i;j++){
+//    if(Number[j]>Number[j+1]){
+//    	temp=Number[j];
+//    	Number[j] =Number[j+1];
+//    	Number[j+1]=temp;
+
+    
+//    }
+// 	}	
+// }console.log(Number);
+//冒泡排序*3
+// var Number=[9,8,5,89,3,22,11,33,55,32,23];
+// var temp ;
+// for (var i=0;i<Number.length-1;i++){//外层控制整体的比较次数
+// 	for(var j=0;j<Number.length-1-i;j++){
+// 		// 内层控制每次比较的交换次数 每次都比上次少一 数组长度减去一再减去一个i 
+// 		if(Number[j]>Number[j+1]){
+// 			// 从小到大排列 如果前面的比后面的大交换两个数的值 继续和后面的比
+//            temp = Number[j];
+//            Number[j] =Number[j+1];
+//            Number[j+1]=temp;
+// 		}
+// 	}
+// }console.log(Number);
+// var a=7,b=8,c;
+// 	c=a;
+// 	a=b;
+// 	b=c;
+// console.log(a,b);
+// - 求阶乘
+// - 求1!+2!+3!+....
+// function num(n){
+// 	var sum=1;
+//      for(var j=1;j<=n;j++){
+//      	sum*=j;
+     	
+//      }
+//    return sum;
+// }
+
+// function sum1(n){
+// 	var a = 0;
+// 	for(var i = 0;i<n;i++){
+// 		a+=num(n)
+// 	}
+// 	return a;
+// }
+// console.log(sum1(3));
+
+
+
+// calcSum(2);
+ // function calcSum(n,m){
+
+ //      if( n>m){
+ //        return;
+ //      }
+ //      var sum = 0;
+ //      for(var i = n;i<=m;i++){
+ //        sum+=i;
+ //      }
+ //      console.log(sum);
+ //    }
+
+ //  // 调用
+ //  calcSum(200,300);
+
+// - 求一组数中的最大值
+//  var Number=[45,77,32,2,12,22,33];
+//  var max=Number[0];
+//  for(var i=0;i<Number.length-1;i++){
+//  	if(max<Number[i]){
+//       max =Number[i];
+//  	}
+// }console.log(max);
+ 	
+// - 求一组数中的最小值
+// var Number=[45,77,32,2,12,22,33];
+//  var min=Number[0];
+//  for(var i=0;i<Number.length-1;i++){
+//  	if(min>Number[i]){
+//       min =Number[i];
+//  	}
+// }console.log(min);
+//  // - 求2个数中的最大值
+// var a=3,b=8;
+// if(a>b){
+// console.log(a);
+// }else{
+// 	console.log(b);
+// }
+//     // - 求3个数中的最大值
+// var a =1000,b=88,c=660;
+// if(a>b&&a>c){
+// 	console.log(a);
+// }else if(a<c&&c>b){
+//     console.log(c);
+// }else{
+// 	console.log(b);
+// }
+
+// function getArie(n){
+//         var arie = 1;
+//         for(var i = 1;i<=n;i++){
+//             arie*=i;
+//         }
+//         return arie;
+//     }
+   
+         
+    
+//     // 求1!+2!+3!+....+n!
+//     function getSum(n){
+//         var sum = 0;
+//         for(var i = 1;i<=n;i++){
+//             sum += getArie(i)
+//         }
+//         return sum;
+//     }
+//     console.log(getSum(3))
+
+
+// function num(n){
+//     	var sum=1;
+//      for(var j=1;j<=n;j++){
+//      	sum*=j;
+     	
+//      }
+//    return sum;
+// }
+
+// function sum1(n){
+// 	var a = 0;
+// 	for(var j = 1;j<=n;j++){
+// 		a+=num(n)
+// 	}
+// 	return a;
+// }
+// console.log(sum1(3));
+// 这个是正确的正确的！！！！！！
+// function ji(n){
+// 	var ji=1;
+// 	for(var i=1;i<=n;i++){
+// 		ji*=i;
+// 	}
+// 	return ji;
+// } 
+// function sum(n){
+// 	var sum=0;
+//  for(var i=1;i<=n;i++){
+//  	sum+=ji(i);
+//  }
+//  return sum;
+// }
+
+
+// console.log(sum(4));
+//     // - 
+// 判断一个数是否是素数(质数  只能被1和本身整除的数叫质数也叫素数)
+ 
+
+
+	</script>
+
+</body>
+</html>

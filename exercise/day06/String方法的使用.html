@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+	// 字符串可以看成是一个字符的数组，可以可以进行遍历，通过索引访问字符串中的值
+	// //1.length-----字符串的长度
+	//    var str = 'bacdefg';
+	//    console.log(str.length);//7
+
+	   // //2， .charAt(索引)-------返回值是制定索引的位置的字符串，超出索引，结果是空字符串
+	   //  var str = 'bacdefg';
+	   //  Str = str.charAt(1);
+	   //  console.log(Str);//a
+	   //  console.log(str.charAt(7));//返回控制符串
+
+	    // /,3. .fromCharCode(数字值，可以是多个参数)-----返回的是ASCII码对应的值
+	    // var str = String.fromCharCode(107,108,109);
+	    // console.log(str);//klm  通过数字值，返回的是字符
+
+	    // concat(字符串1，字符串2，...);------返回的是拼接之后的新的字符串
+
+	    //  4. var str = 'abcdef';
+	    // console.log(str.concat('你好','我好')); //abcdef你好我好
+
+	    // .indexOf(要找的字符串，从某个位置开始的索引); 返回的是这个字符串的索引值，没找到则返回-1
+
+	    // var str = 'abcdef';
+	    // console.log(str.indexOf('d'));//3
+	    // console.log(str.indexOf('h'));//-1
+	    
+
+	    // lastIndexOf(要找的字符串)从后往前找，但是索引一日是从左往右的方式，找不到则返回-1；
+
+	     var str = 'abcdefd';
+	     cosole.log(str.lastIndexOf('d'));
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		 var url = 'http://www.itheima.com/login?name=zs&age=18&a=1&b=2';
+		 // 1.获取url 后面的参数
+
+		 // 2.获取？后面第一个字符的索引
+
+		 // 3,获取？后面的字符串，name=zs&age=18&a=1&b=2
+
+		 // 4，使用&切割字符串，返回一个数组
+
+		 // 5，每一项的这样子，  key = value就是一个对象
+
+		 // 6.返回对象
+
+
+		 function getParams(url) {
+		 	var index = url.indexOf('?') + 1;
+		 	var parmas = url.substr(index);
+		 	var arr = parmas.split('&'); 
+		 	var o = {};//空对象
+		 	for(var i = 0; i < arr.length; i++) {
+		 		var tmpArr = arr[i].split('=');
+		 		var key = tmpArr[0];
+		 		var value = tmpArr[1];
+		 		o[key] = value;
+		 	}
+		 	return o;
+		 }
+		 var obj = getParams(url);
+		 console.log(obj);
+
+
+	</script>
+</body>
+</html>

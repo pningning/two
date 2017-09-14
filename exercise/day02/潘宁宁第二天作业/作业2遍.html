@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		4 >= 6 || '人' != '阿凡达' && !(12 * 2 == 144) && true
+		false || true  
+				true
+				var num = 10;
+            5 == num / 2 && (2 + 2 * num).toString() === '22'
+           true && true
+           true
+		// 判断一个年份
+		var year = "2020年";
+		if(parseInt(year)%4==0 && parseInt(year)%100!=0 ||parseInt(year)%400==0) {
+			console.log('闰年');
+		} else {
+			console.log('平年');
+		}
+		// 100以内的奇数的和
+		var sum = 0;
+		for(var i = 0;i<=100;i++) {
+			if(i%2!=0) {
+				sum+=i;
+			}
+		}
+		console.log(sum);
+		// 1-100之间所有数的乘积
+		var sum = 1;
+		for(var i = 1;i<=100;i++) {
+			sum*=i;
+		}
+		console.log(sum);
+		// 计算1-100之间能3整除的数的和
+		var sum = 0;
+		for(var i =1;i<=100;i++) {
+			if(i%3==0) {
+				sum+=i;
+			}
+		}
+		console.log(sum);
+		// 1-100,不能被被7整除的数的和
+		 var sum = 0;
+		for(var i =1;i<=100;i++) {
+			if(i%7!=0) {
+				sum+=i;
+			}
+		}
+		console.log(sum);
+
+		// 本金10000元存入银行，年利率是千分之三，每过1年，将本金和利息相加作为新的本金。计算5年后，获得的本金是多少？
+		var money = 10000;
+		for(var i = 1;i <= 5;i++) {
+			money+=money*0.003;
+		}
+		console.log(parseFloat(money));
+		 // 有个人想知道，一年之内一对兔子能繁殖多少对？
+    // 于是就筑了一道围墙把一对兔子关在里面。
+    // 已知一对兔子每个月可以生一对小兔子，而一对兔子从出生后第3个月起每月生一对小兔子。
+    // 假如一年内没有发生死亡现象，那么，一对兔子一年内（12个月）能繁殖成多少对？
+    // 
+    var a= 1;
+    var b = 0;
+    for(var i = 0; i <= 12; i++) {
+    	a = a+b;
+    	b = a-b;
+    }
+    console.log(a);
+	</script>
+</body>
+</html>

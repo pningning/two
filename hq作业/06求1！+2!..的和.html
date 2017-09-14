@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function getFacSum(num) {
+			var fac = 1;
+			var sum = 0;
+	
+			for(var j=1; j<=num; j++){
+				fac *= j;
+				sum += fac;
+			}
+			return sum;
+		}
+
+
+		console.log(getFacSum(4));
+	</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+			4 >= 6 || '人' != '阿凡达' && !(12 * 2 == 144) && true
+			// 4 >= 6 || '人' != '阿凡达' && !false && true
+			// 4 >= 6 || true && !false && true
+			// false || true && !false && true
+			// false || true
+			true
+			var num = 10;
+            5 == num / 2 && (2 + 2 * num).toString() === '22'
+            //  5 == num / 2 && 22.toString() === '22'
+            //    5 == num / 2 && "22" === '22'
+            //    5 == 5 && true
+            // true && true
+            true
+
+		// 判断一个年份是闰年还是平年
+      // 提示:闰年：能被4整除，但不能被100整除的年份 或者 能被400整除的年份
+      // 1.声明一个变量
+      var year =2017;
+      // 2.如何判断
+       if(year%4==0 && year%100!=0 || year%400==0) {
+       	console.log('闰年');
+       } else {
+       	console.log('平年');
+       }
+       // 案例一: 打印100以内的奇数
+		for(var i=1;i<=100;i++) {
+			if(i%2!=0) {
+				console.log(i);
+			}
+		}
+    // 案例二: 打印100以内的奇数的和
+    	var sum = 0;
+    	for(var i = 0;i<=100;i++) {
+    		if(i%2!=0) {
+    			sum +=i;
+    		}
+    	}
+    	console.log(sum);
+    	// 求1-100之间所有数的乘积
+		var sum = 1;
+		for(var i=1;i<=100;i++) {
+			sum*=i;
+		}
+		console.log(sum);
+
+		// 计算1-100之间能3整除的数的和
+		var sum=0;
+		for(var i=1;i<=100;i++) {
+			if(i%3==0) {
+				sum+=i;
+			}
+		}
+		console.log(sum);
+		
+		 // 计算1-100之间不能被7整除的数的和
+		 var sum = 0;
+		 for(var i =1;i<=100;i++) {
+		 	if(i%7!=0) {
+		 		sum +=i;
+		 	}
+		 }
+		 console.log(sum);
+		 // 本金10000元存入银行，年利率是千分之三，每过1年，将本金和利息相加作为新的本金。计算5年后，获得的本金是多少？
+		 var money = 10000;
+		 for(var i = 1; i <= 5; i++) {
+		 	money+=money*0.003;
+		 }
+		 console.log(parseFloat(money));
+		 // 求200-300之间所有的奇数的和
+		 var sum =0;
+		 for(var i =200;i>=200 && i<=300;i++) {
+		 	if(i%2!=0) {
+		 		sum+=i;
+		 	}
+		 }
+		 console.log(sum);
+		 // 兔子
+		 // var num = 1;
+   //       var sum = 0;
+   //       for(var i = 1; i<12;i++){
+   //          num = num + sum;
+   //          sum = num - sum;
+   //       }
+   //       console.log(num);
+         // var sum1 = 1;
+         // var sum2 = 0;
+         // for(var i = 1; i<12;i++){
+         //    sum1 = sum1 + sum2;
+         //    sum2 = sum1 - sum2;
+         // }
+         // console.log(sum1);
+         // 兔子正确
+         var n1 = 1;
+         var n2 = 2;
+         var n3;
+         	for(var i = 3; i < 12; i++) {
+         		n3 = n1 + n2;
+         		n1 = n2;
+         		n2 = n3;
+         	}
+         	console.log(n3);
+	</script>
+</body>
+</html>

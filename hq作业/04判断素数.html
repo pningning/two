@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function getPrime(num) {
+			flag = true;  //定义素数标志，默认为true
+			for(var i=2; i<=parseInt(num/2); i++) {  
+			//从2开始一直到num/2，判断num是否能被整除，只要期间有任何一个数可以被num整除，那么将标记置为false
+				if(num%i==0) {
+					flag = false;
+				}
+			}
+			//返回标志
+			return flag;
+		}
+
+		console.log(getPrime(10));
+	</script>
+</body>
+</html>
