@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 案例一：
+		var str = '我爱最帅的杨哥，太帅了';
+		var key = '的';
+		var index = str.indexOf(key);
+		str = str.substr(index,2); //substr(开始位置的索引，截取的个数)；
+		console.log(str);//的杨
+
+		//案例2:找到这个字符串中所有的 o 出现的位置
+		// var str2 = "hello wod odd ott fbo nhyo";
+		// var index = 0;//开始的位置
+
+
+		// 案例三找中，字符串找到这个字符串出现了多少次
+		 var str3 = "whatOareYyouYnoYshaHleiHoHmyHgod";
+		 // 第一步：把所有的字母全部变成小写
+		 str3 = str3.toLocaleLowerCase();
+		 var obj = {};
+		 for(var i = 0; i < str3.length; i++) {
+		 	var key = str3[i];
+		 	if(obj[key]) {
+		 		obj[key]++;
+		 	} else {
+		 		obj[key] = 1;
+		 	}
+		 }
+		 console.log(obj);
+
+	</script>
+</body>
+</html>
